@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_main_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左侧" />
+
+        <Button
+            android:id="@+id/button_main_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="右侧" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:text="one" />
+
+        <TextView
+            android:id="@+id/textView_two"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:text="two" />
+
+        <TextView
+            android:id="@+id/textView_thr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp" 
+            android:textSize="20sp"
+            android:text="thr" />
+
+        <TextView
+            android:id="@+id/textView_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+             android:padding="20dp" 
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:text="fou" />
+	
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/dotx22">
+
+        <ImageView
+            android:id="@+id/cusor"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dotx11" />
+    </LinearLayout>
+   
+	<android.support.v4.view.ViewPager  
+        android:id="@+id/viewPager"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" />  
+
+</LinearLayout>
